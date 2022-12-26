@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/anggaagustiratelkom/frontend-react.git/static/css/main.68841a8d.css",
-    "main.js": "/anggaagustiratelkom/frontend-react.git/static/js/main.c72a6cd9.js",
+    "main.css": "/anggaagustiratelkom/frontend-react.git/static/css/main.13928eed.css",
+    "main.js": "/anggaagustiratelkom/frontend-react.git/static/js/main.5535c521.js",
     "static/js/787.22e3b59d.chunk.js": "/anggaagustiratelkom/frontend-react.git/static/js/787.22e3b59d.chunk.js",
     "index.html": "/anggaagustiratelkom/frontend-react.git/index.html",
-    "main.68841a8d.css.map": "/anggaagustiratelkom/frontend-react.git/static/css/main.68841a8d.css.map",
-    "main.c72a6cd9.js.map": "/anggaagustiratelkom/frontend-react.git/static/js/main.c72a6cd9.js.map",
+    "main.13928eed.css.map": "/anggaagustiratelkom/frontend-react.git/static/css/main.13928eed.css.map",
+    "main.5535c521.js.map": "/anggaagustiratelkom/frontend-react.git/static/js/main.5535c521.js.map",
     "787.22e3b59d.chunk.js.map": "/anggaagustiratelkom/frontend-react.git/static/js/787.22e3b59d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68841a8d.css",
-    "static/js/main.c72a6cd9.js"
+    "static/css/main.13928eed.css",
+    "static/js/main.5535c521.js"
   ]
 }
