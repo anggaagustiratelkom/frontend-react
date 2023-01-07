@@ -1,4 +1,4 @@
-import axios from 'axios';
+
 import React, { useEffect, useState } from 'react'
 import './index.css'
 
@@ -6,23 +6,48 @@ const Index = () =>{
     const [employees, setEmployees] = useState([]);
 
     const retrieveData = () =>{
-        return(
-            axios.get("http://127.0.0.1:3100/employees")
-                .then((response) =>{
-                    setEmployees(response.data)
-                }).catch((err)=>{
-                    console.log(err.response.data);
-                })
-        )
+        fetch("http://127.0.0.1:3100/employees")
+        .then(response =>{
+            return response.json()
+        })
+        .then(data =>{
+            setEmployees(data)
+        })
     };
+
     useEffect(() =>{
         retrieveData();
     },[])
+    
     return(
-        <p>{JSON.stringify(employees)}</p>
+    <div className='m-4'>
+        <h1 lassName='text-center'>Employees</h1>
+        <table className='table table-bordered mt-5'>
+            <thead>
+                <tr>
+                    <th className='nama'>Id Employee</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            {employees.length > 0 && (
+                <tr>
+                {employees.map(employee => (
+                    <td>{employee.email}</td>
+                    // <td>{employee.name}</td>
+                ))}
+                </tr>
+            )}
+            </tbody>
+        
+        </table>
+    </div>
+        // <p>{JSON.stringify(employees)}</p>
     // <div className='m-4'>
     //     <h1 className='text-center'>Employees</h1>
-    //     <table className='table table-bordered mt-5'>
+    //         <table className='table table-bordered mt-5'>
     //             <thead>
     //                 <tr>
     //                     <th className='nama'>Id Employee</th>
